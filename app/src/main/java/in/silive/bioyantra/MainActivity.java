@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        web_view = (WebView)findViewById(R.id.web_view);
+        web_view = (WebView) findViewById(R.id.web_view);
         WebSettings webSettings = web_view.getSettings();
         //web_view.getSettings().setLoadWithOverviewMode(true);
         //web_view.getSettings().setUseWideViewPort(true);
@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         web_view.setWebViewClient(new myWebClient());
         web_view.loadUrl("http://www.bioyantra.com");
     }
+
     public class myWebClient extends WebViewClient {
         @Override
         public void onPageStarted(WebView view, String url, Bitmap favicon) {

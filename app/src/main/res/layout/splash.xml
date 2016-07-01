@@ -11,7 +11,7 @@
         android:layout_height="250dp"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
-        android:src="@drawable/bio" />
+        android:src="@drawable/icon" />
 
     <TextView
         android:id="@+id/text"
