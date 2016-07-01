@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         web_view = (WebView) findViewById(R.id.web_view);
         WebSettings webSettings = web_view.getSettings();
+        webSettings.setJavaScriptEnabled(true);
         //web_view.getSettings().setLoadWithOverviewMode(true);
         //web_view.getSettings().setUseWideViewPort(true);
         //web_view.getSettings().setBuiltInZoomControls(true);

@@ -53,7 +53,7 @@ public class Splash extends AppCompatActivity {
         NetworkInfo info = connectivityManager.getActiveNetworkInfo();
         if (info == null) {
             Snackbar snackbar = Snackbar
-                    .make(splash, "No internet connection!", Snackbar.LENGTH_LONG)
+                    .make(splash, "No internet connection!", Snackbar.LENGTH_INDEFINITE)
                     .setAction("RETRY", new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
